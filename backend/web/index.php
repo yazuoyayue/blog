@@ -8,10 +8,20 @@ require_once (DOCROOT . '/common/config/bootstrap.php');
 #后台web的独有的引导文件
 require_once (DOCROOT . '/backend/config/bootstrap.php');
 
+/*
+var_dump(['aa'] + ['bb','d']);exit;
 
+output :
+array (size=2)
+  0 => string 'aa' (length=2)
+  1 => string 'd' (length=1)
 
-/**
- * array_merge 和 ArrayHelper::merge的不同之处
+键是数字的时候，array_merge 会追加，+不会
+键是字符的时候， array_merge会覆盖前面的，+不会
+*/
+
+/*
+array_merge 和 ArrayHelper::merge的不同之处
 ==============example 1============
 $arr1 = [
     'key1' => 12,

@@ -30,4 +30,4 @@ require_once (DOCROOT . '/vendor/yiisoft/yii2/Yii.php');
  *设置别名
  * @see var_dump(Yii::$aliases);
 */
-Yii::setAlias('@common', 'dd');
+Yii::setAlias('@common', DOCROOT . '/common');
