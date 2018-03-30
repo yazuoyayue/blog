@@ -8,7 +8,6 @@ require_once (DOCROOT . '/common/config/bootstrap.php');
 #后台web的独有的引导文件
 require_once (DOCROOT . '/backend/config/bootstrap.php');
 
-
 /*
 var_dump(['aa'] + ['bb','d']);exit;
 
