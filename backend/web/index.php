@@ -8,6 +8,42 @@ require_once (DOCROOT . '/common/config/bootstrap.php');
 #后台web的独有的引导文件
 require_once (DOCROOT . '/backend/config/bootstrap.php');
 
+#公共配置 > 某个环境配置 > 某个应用程序配置 , 本地local配置 > 模板配置
+$configs = \yii\helpers\ArrayHelper::merge(
+    require (DOCROOT . '/common/config/main.php'),
+    require (DOCROOT . '/common/config/main-local.php'),
+    require (DOCROOT . '/enviornments/' . $env . '/config/main.php'),
+    require (DOCROOT . '/enviornments/' . $env . '/config/main-local.php'),
+    require (DOCROOT . '/backend/config/main.php'),
+    require (DOCROOT . '/backend/config/main-local.php')
+);
+
+$app = new \yii\web\Application($configs);
+var_dump($app->db->createCommand('select * from tb_user')->queryAll());
+#$app->run();
+
+
+#Yii::$app->log->logger->log('22',0x08);
+#Yii::info('222333');exit;
+
+/*
+$a = [
+    'a' => [
+        'a2' => ['s1' => '22']
+    ],
+    'a3' => [
+        'a2' => ['s1' => '22']
+    ]
+];
+
+#var_dump(\yii\helpers\ArrayHelper::getValue($a,'a.a24'));exit;  输出：null
+#var_dump(\yii\helpers\ArrayHelper::getValue($a,'a.a24', ''));exit; 输出 ''
+var_dump(\yii\helpers\ArrayHelper::getValue($a,['a', 'a2', 's1'], ''));exit; 输出 '22'
+var_dump(\yii\helpers\ArrayHelper::getValue($a,'a.a2.s1', ''));exit; 输出 '22'
+
+*/
+
+
 /*
 var_dump(['aa'] + ['bb','d']);exit;
 
