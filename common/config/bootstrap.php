@@ -30,4 +30,7 @@ require_once (DOCROOT . '/vendor/yiisoft/yii2/Yii.php');
  *设置别名
  * @see var_dump(Yii::$aliases);
 */
+
+##命名空间 common\models\xx等用到
 Yii::setAlias('@common', DOCROOT . '/common');
+

@@ -18,9 +18,14 @@ $configs = \yii\helpers\ArrayHelper::merge(
     require (DOCROOT . '/backend/config/main-local.php')
 );
 
+#发布Yii\bootstarp\BootstarpAsset资源的时候用到@bower,默认的@bower是 'vendor\bower路径'
+#所以，这里对它进行重写
+
 $app = new \yii\web\Application($configs);
-var_dump($app->db->createCommand('select * from tb_user')->queryAll());
-#$app->run();
+
+Yii::setAlias('@bower', DOCROOT . '/vendor/bower-asset');
+#var_dump($app->db->createCommand('select * from tb_user')->queryAll());
+$app->run();
 
 
 #Yii::$app->log->logger->log('22',0x08);

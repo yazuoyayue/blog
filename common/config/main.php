@@ -8,7 +8,7 @@
 
 #vendor路径和时区设置一般是不变的,所以放在公共配置
 return [
-    'vendorPath' => '',
+    'vendorPath' => DOCROOT . '/vendor', #@bower用到
     'timeZone' => 'Asia/Shanghai', #设置时区
     'bootstrap' => ['log'],  # 开启日志
     'components' => [
