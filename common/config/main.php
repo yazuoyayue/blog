@@ -21,6 +21,9 @@ return [
         ],
         'db' => [
             'class' => 'yii\db\Connection'
+        ],
+        'urlManager' => [
+            'enablePrettyUrl' => true
         ]
     ]
 ];

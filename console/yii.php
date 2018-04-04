@@ -1,13 +1,12 @@
 <?php
-
 #定义根目录
-defined('DOCROOT') or define('DOCROOT', dirname(dirname(__dir__)));
+defined('DOCROOT') or define('DOCROOT', dirname(__dir__));
 
 #公共（各个web站点的）引导文件
 require_once (DOCROOT . '/common/config/bootstrap.php');
 
 #后台web的独有的引导文件
-require_once (DOCROOT . '/backend/config/bootstrap.php');
+require_once (DOCROOT . '/console/config/bootstrap.php');
 
 #公共配置 > 某个环境配置 > 某个应用程序配置 , 本地local配置 > 模板配置
 $configs = \yii\helpers\ArrayHelper::merge(
@@ -15,13 +14,13 @@ $configs = \yii\helpers\ArrayHelper::merge(
     require (DOCROOT . '/common/config/main-local.php'),
     require (DOCROOT . '/enviornments/' . $env . '/config/main.php'),
     require (DOCROOT . '/enviornments/' . $env . '/config/main-local.php'),
-    require (DOCROOT . '/backend/config/main.php'),
-    require (DOCROOT . '/backend/config/main-local.php')
+    require (DOCROOT . '/console/config/main.php'),
+    require (DOCROOT . '/console/config/main-local.php')
 );
 
 
 
-$app = new \yii\web\Application($configs);
+$app = new \yii\console\Application($configs);
 
 #发布Yii\bootstarp\BootstarpAsset资源的时候用到@bower,默认的@bower是 'vendor\bower路径'
 #所以，这里对它进行重写

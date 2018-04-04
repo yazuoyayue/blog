@@ -1,0 +1,1896 @@
+2018-04-04 15:06:35 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-04 15:06:35 [-][-][-][trace][yii\base\Controller::runAction] Route to run: help/index
+2018-04-04 15:06:35 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\HelpController::actionIndex()
+2018-04-04 15:06:35 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522825595.76
+    'REQUEST_TIME' => 1522825595
+    'argv' => [
+        0 => 'yii.php'
+    ]
+    'argc' => 1
+]
+2018-04-04 15:08:50 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-04 15:08:50 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "-help". in D:\git\blog\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\git\blog\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('-help', Array)
+#1 D:\git\blog\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('-help', Array)
+#2 D:\git\blog\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\git\blog\console\yii.php(29): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "-help". in D:\git\blog\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\git\blog\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('-help', Array)
+#1 D:\git\blog\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\git\blog\console\yii.php(29): yii\base\Application->run()
+#3 {main}
+2018-04-04 15:08:50 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522825730.03
+    'REQUEST_TIME' => 1522825730
+    'argv' => [
+        0 => 'yii.php'
+        1 => '-help'
+    ]
+    'argc' => 2
+]
+2018-04-04 15:08:56 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-04 15:08:56 [-][-][-][trace][yii\base\Controller::runAction] Route to run: help/index
+2018-04-04 15:08:56 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\HelpController::actionIndex()
+2018-04-04 15:08:56 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522825736.764
+    'REQUEST_TIME' => 1522825736
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'help'
+    ]
+    'argc' => 2
+]
+2018-04-04 15:37:19 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-04 15:37:19 [-][-][-][trace][yii\base\Controller::runAction] Route to run: migrate/create
+2018-04-04 15:37:19 [-][-][-][error][yii\console\Exception] yii\console\Exception: Missing required arguments: name in D:\git\blog\vendor\yiisoft\yii2\console\Controller.php:186
+Stack trace:
+#0 D:\git\blog\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 D:\git\blog\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 D:\git\blog\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('create', Array)
+#3 D:\git\blog\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('create', Array)
+#4 D:\git\blog\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/create', Array)
+#5 D:\git\blog\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/create', Array)
+#6 D:\git\blog\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 D:\git\blog\console\yii.php(29): yii\base\Application->run()
+#8 {main}
+2018-04-04 15:37:19 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522827439.463
+    'REQUEST_TIME' => 1522827439
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'migrate/create'
+    ]
+    'argc' => 2
+]
+2018-04-04 15:38:22 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-04 15:38:22 [-][-][-][trace][yii\base\Controller::runAction] Route to run: migrate/create
+2018-04-04 15:38:22 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\MigrateController::actionCreate()
+2018-04-04 15:38:22 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:38:22 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:38:22 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:38:22 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:38:22 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:38:22 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:39:00 [-][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\git\blog\vendor\yiisoft\yii2/views/migration.php
+2018-04-04 15:38:22 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522827502.892
+    'REQUEST_TIME' => 1522827502
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'migrate/create'
+        2 => 'newtableTest1'
+    ]
+    'argc' => 3
+]
+2018-04-04 15:42:00 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-04 15:42:00 [-][-][-][trace][yii\base\Controller::runAction] Route to run: migrate/up
+2018-04-04 15:42:00 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\MigrateController::actionUp()
+2018-04-04 15:42:00 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:42:00 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:42:00 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:42:00 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:42:00 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:42:00 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:42:00 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+)
+2018-04-04 15:42:00 [-][-][-][profile begin][yii\db\Command::execute] CREATE TABLE `migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+)
+2018-04-04 15:42:00 [-][-][-][profile end][yii\db\Command::execute] CREATE TABLE `migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+)
+2018-04-04 15:42:00 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:42:00 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:42:00 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:42:00 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:42:00 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:42:00 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:42:00 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1522827720)
+2018-04-04 15:42:00 [-][-][-][profile begin][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1522827720)
+2018-04-04 15:42:00 [-][-][-][profile end][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1522827720)
+2018-04-04 15:42:00 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:42:00 [-][-][-][profile begin][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:42:00 [-][-][-][profile end][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:42:00 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:42:00 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:42:00 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:42:00 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:42:00 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:42:00 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:43:22 [-][-][-][trace][yii\db\Transaction::begin] Begin transaction
+2018-04-04 15:43:22 [-][-][-][trace][yii\db\Transaction::commit] Commit transaction
+2018-04-04 15:43:23 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:43:23 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:43:23 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:43:23 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:43:23 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:43:23 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:43:23 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m180404_073822_newtableTest1', 1522827803)
+2018-04-04 15:43:23 [-][-][-][profile begin][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m180404_073822_newtableTest1', 1522827803)
+2018-04-04 15:43:23 [-][-][-][profile end][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m180404_073822_newtableTest1', 1522827803)
+2018-04-04 15:42:00 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522827720.033
+    'REQUEST_TIME' => 1522827720
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-04-04 15:43:33 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-04 15:43:33 [-][-][-][trace][yii\base\Controller::runAction] Route to run: migrate/up
+2018-04-04 15:43:33 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\MigrateController::actionUp()
+2018-04-04 15:43:33 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:43:33 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:43:33 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:43:33 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:43:33 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:43:33 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:43:33 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:43:33 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:43:33 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:43:33 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:43:33 [-][-][-][profile begin][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:43:33 [-][-][-][profile end][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:43:33 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522827813.619
+    'REQUEST_TIME' => 1522827813
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-04-04 15:45:52 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-04 15:45:52 [-][-][-][trace][yii\base\Controller::runAction] Route to run: migrate/create
+2018-04-04 15:45:52 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\MigrateController::actionCreate()
+2018-04-04 15:45:52 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:45:52 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:45:52 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:45:52 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:45:52 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:45:52 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:45:52 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:45:52 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:45:52 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:45:55 [-][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\git\blog\vendor\yiisoft\yii2/views/migration.php
+2018-04-04 15:45:52 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522827952.75
+    'REQUEST_TIME' => 1522827952
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'migrate/create'
+        2 => 'newtableTest2'
+    ]
+    'argc' => 3
+]
+2018-04-04 15:48:59 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-04 15:48:59 [-][-][-][trace][yii\base\Controller::runAction] Route to run: migrate/up
+2018-04-04 15:48:59 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\MigrateController::actionUp()
+2018-04-04 15:48:59 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:48:59 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:48:59 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:48:59 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:48:59 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:48:59 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:48:59 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:48:59 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:48:59 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:48:59 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:48:59 [-][-][-][profile begin][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:48:59 [-][-][-][profile end][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:48:59 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:48:59 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:48:59 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:48:59 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:48:59 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:48:59 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:48:59 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522828139.929
+    'REQUEST_TIME' => 1522828139
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-04-04 15:49:20 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-04 15:49:20 [-][-][-][trace][yii\base\Controller::runAction] Route to run: migrate/to
+2018-04-04 15:49:20 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\MigrateController::actionTo()
+2018-04-04 15:49:20 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:49:20 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:49:20 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:49:20 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:49:20 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:49:20 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:49:20 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:49:20 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:49:20 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:49:20 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:49:20 [-][-][-][profile begin][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:49:20 [-][-][-][profile end][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:49:20 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:49:20 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:49:20 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:49:20 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:49:20 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:49:20 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:49:20 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:49:20 [-][-][-][profile begin][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:49:20 [-][-][-][profile end][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:49:20 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:49:20 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:49:20 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:49:20 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:49:20 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:49:20 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:49:35 [-][-][-][trace][yii\db\Transaction::begin] Begin transaction
+2018-04-04 15:49:35 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `newtable_test2` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(255) NOT NULL,
+	`content` text
+)
+2018-04-04 15:49:35 [-][-][-][profile begin][yii\db\Command::execute] CREATE TABLE `newtable_test2` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(255) NOT NULL,
+	`content` text
+)
+2018-04-04 15:49:35 [-][-][-][profile end][yii\db\Command::execute] CREATE TABLE `newtable_test2` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(255) NOT NULL,
+	`content` text
+)
+2018-04-04 15:49:35 [-][-][-][trace][yii\db\Transaction::commit] Commit transaction
+2018-04-04 15:49:35 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:49:35 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:49:35 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:49:35 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:49:35 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:49:35 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:49:35 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m180404_074552_newtableTest2', 1522828175)
+2018-04-04 15:49:35 [-][-][-][profile begin][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m180404_074552_newtableTest2', 1522828175)
+2018-04-04 15:49:35 [-][-][-][profile end][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m180404_074552_newtableTest2', 1522828175)
+2018-04-04 15:49:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522828160.757
+    'REQUEST_TIME' => 1522828160
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'migrate/to'
+        2 => 'm180404_074552_newtableTest2'
+    ]
+    'argc' => 3
+]
+2018-04-04 15:54:10 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-04 15:54:10 [-][-][-][trace][yii\base\Controller::runAction] Route to run: migrate/to
+2018-04-04 15:54:10 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\MigrateController::actionTo()
+2018-04-04 15:54:10 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:54:10 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:54:10 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:54:10 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 15:54:10 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:54:10 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:54:10 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:54:10 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:54:10 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:54:10 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:54:10 [-][-][-][profile begin][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:54:10 [-][-][-][profile end][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:54:10 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:54:10 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:54:10 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 15:54:10 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:54:10 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:54:10 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 15:54:10 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:54:10 [-][-][-][profile begin][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:54:10 [-][-][-][profile end][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-04-04 15:54:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522828450.46
+    'REQUEST_TIME' => 1522828450
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'migrate/to'
+        2 => 'm180404_074552_newtableTest2'
+    ]
+    'argc' => 3
+]
+2018-04-04 16:12:46 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-04 16:12:46 [-][-][-][trace][yii\base\Controller::runAction] Route to run: migrate/create
+2018-04-04 16:12:46 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\MigrateController::actionCreate()
+2018-04-04 16:12:46 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 16:12:46 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 16:12:46 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 16:12:46 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=gxptest
+2018-04-04 16:12:46 [-][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 16:12:46 [-][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-04-04 16:12:46 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 16:12:46 [-][-][-][profile begin][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 16:12:46 [-][-][-][profile end][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-04-04 16:12:54 [-][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\git\blog\vendor\yiisoft\yii2/views/migration.php
+2018-04-04 16:12:46 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1522829566.0558
+    'REQUEST_TIME' => 1522829566
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'migrate/create'
+        2 => 'yzyy_menu'
+    ]
+    'argc' => 3
+]
