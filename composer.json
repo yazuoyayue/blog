@@ -1,7 +1,11 @@
 {
     "name": "azuo/blog",
     "description": "azuo's blog",
-    "keywords": ["azuo", "blog", "yii-blog"],
+    "keywords": [
+        "azuo",
+        "blog",
+        "yii-blog"
+    ],
     "homepage": "http://www.52azuo.com/",
     "type": "project",
     "license": "BSD-3-Clause",
@@ -15,7 +19,8 @@
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap": "~2.0.0",
-        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0"
+        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+        "yiisoft/yii2-redis": "~2.0.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
@@ -30,10 +35,10 @@
             "enabled": false
         }
     },
-    "repositories": [
-        {
+    "repositories": {
+        "packagist": {
             "type": "composer",
             "url": "https://packagist.phpcomposer.com"
         }
-    ]
+    }
 }

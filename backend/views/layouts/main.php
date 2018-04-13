@@ -10,6 +10,8 @@
 use backend\assets\AppAsset;
 
 AppAsset::register($this);
+#获取后台栏目
+#\yii\widgets\Menu::s
 $this->beginPage();
 ?>
 <html>

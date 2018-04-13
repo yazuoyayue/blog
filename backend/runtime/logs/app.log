@@ -669,3 +669,125 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1522814542.459
     'REQUEST_TIME' => 1522814542
 ]
+2018-04-13 15:19:07 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-13 15:19:07 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-04-13 15:19:07 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2018-04-13 15:19:07 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2018-04-13 15:19:07 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: backend\controllers\SiteController::actionIndex()
+2018-04-13 15:19:07 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\git\blog\backend\views\site\index.php
+2018-04-13 15:19:07 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\git\blog\backend\views\layouts\main.php
+2018-04-13 15:19:07 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.blog.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_CLIENTTYPE' => 'ios'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\jre\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/7.0.10 Server at admin.blog.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/7.0.10'
+    'SERVER_NAME' => 'admin.blog.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/git/blog/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/git/blog/backend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/git/blog/backend/web/index.php'
+    'REMOTE_PORT' => '52035'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523603947.123
+    'REQUEST_TIME' => 1523603947
+]
+2018-04-13 15:19:07 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-04-13 15:19:07 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-04-13 15:19:07 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'favicon.ico'
+2018-04-13 15:19:07 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in D:\git\blog\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\git\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('favicon.ico', Array)
+#1 D:\git\blog\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\git\blog\backend\web\index.php(29): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\git\blog\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\git\blog\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\git\blog\backend\web\index.php(29): yii\base\Application->run()
+#2 {main}
+2018-04-13 15:19:07 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\git\blog\vendor\yiisoft\yii2/views/errorHandler/error.php
+2018-04-13 15:19:07 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'admin.blog.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.blog.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_CLIENTTYPE' => 'ios'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\jre\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/7.0.10 Server at admin.blog.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/7.0.10'
+    'SERVER_NAME' => 'admin.blog.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/git/blog/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/git/blog/backend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/git/blog/backend/web/index.php'
+    'REMOTE_PORT' => '52043'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/favicon.ico'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\favicon.ico'
+    'PHP_SELF' => '/index.php/favicon.ico'
+    'REQUEST_TIME_FLOAT' => 1523603947.777
+    'REQUEST_TIME' => 1523603947
+]

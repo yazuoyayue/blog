@@ -19,12 +19,11 @@ $configs = \yii\helpers\ArrayHelper::merge(
     require (DOCROOT . '/backend/config/main-local.php')
 );
 
-
+#发布Yii\bootstarp\BootstarpAsset资源的时候用到@bower,默认的@bower是 'vendor\bower路径'
+#所以，这里对它进行重写
 
 $app = new \yii\web\Application($configs);
 
-#发布Yii\bootstarp\BootstarpAsset资源的时候用到@bower,默认的@bower是 'vendor\bower路径'
-#所以，这里对它进行重写
 Yii::setAlias('@bower', DOCROOT . '/vendor/bower-asset');
 #var_dump($app->db->createCommand('select * from tb_user')->queryAll());
 $app->run();
@@ -97,6 +96,36 @@ array (size=2)
   'key2' =>
     array (size=1)
       'key2_1' => int 5666
+
+
+//我们用一个数组来存储上一条记录的右值，再把它和本条记录的右值比较，如果前者比后者小，说明不是父子关系，就用array_pop弹出数组，否则就保留
+//两个循环而已，没有递归
+$lists = [
+        ['left' => 1,'rgt' => 6, 'title' => '0分类'],
+        ['left' => 2,'rgt' => 5, 'title' => '1分类'],
+        ['left' => 3,'rgt' => 4, 'title' => '2分类'],
+        ['left' => 7,'rgt' => 8, 'title' => '0分类'],
+    	['left' => 9,'rgt' => 12, 'title' => '0分类'],
+        ['left' => 10,'rgt' => 11, 'title' => '1分类']
+    ];
+    $parent = array();
+    $arr_list = array();
+    foreach($lists as $item){
+        #if(count($parent)){
+            while (count($parent) > 0 && $parent[count($parent) -1]['rgt'] < $item['rgt']){
+                array_pop($parent);
+            }
+        #}
+        $item['depath'] = count($parent);
+        $parent[] = $item;
+        $arr_list[]= $item;
+    }
+    //显示树状结构
+    foreach($arr_list as $a)
+    {
+        echo str_repeat('--', $a['depath']) . $a['title'] . '<br />';
+    }
+exit;
 */
 
 
