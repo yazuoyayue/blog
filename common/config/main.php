@@ -23,7 +23,8 @@ return [
             'class' => 'yii\db\Connection'
         ],
         'urlManager' => [
-            'enablePrettyUrl' => true
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
         ]
     ]
 ];
