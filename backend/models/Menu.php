@@ -70,10 +70,15 @@ class Menu extends \yii\db\ActiveRecord
     public static function getBreadcrumbs($rule = 'index/index'){
         /* 高亮 当前栏目 及其所有父栏目 */
         $rule    = strtolower($rule);
-        $current = static::find()->select('id')->where(['and' ,'pid != 0' ,['like', 'url', $rule]])->asArray()->one();
         /* 面包屑导航 */
-        $nav     = static::getParentMenus($current['id']);
-        return $nav;
+        $path = [];
+        $nav = static::find()->select(['id','pid','title'])->where(['and' ,'pid != 0' ,['like', 'url', $rule]])->asArray()->one();
+        while($nav){
+            #$path[] = $nav;
+            array_unshift($path, $nav);
+            $nav = static::find()->select(['id','pid','title'])->where(['id'=>$nav['pid']])->asArray()->one();
+        }
+        return $path;
     }
 
     /**
@@ -91,7 +96,7 @@ class Menu extends \yii\db\ActiveRecord
 
         /* 面包屑导航 */
         $nav = static::getBreadcrumbs($rule);
-
+//var_dump($nav);
         /* 获取一级栏目 */
         foreach ($menus['main'] as $key => $item) {
             if (!is_array($item) || empty($item['title']) || empty($item['url']) ) {
@@ -118,7 +123,7 @@ class Menu extends \yii\db\ActiveRecord
                             continue;//继续循环
                         }
                     }
-                }//var_dump($second_menu);
+                }var_dump($second_menu);
 
                 /* 生成child树 */
                 $groups = static::find()->select(['group','min(sort) as sort'])
