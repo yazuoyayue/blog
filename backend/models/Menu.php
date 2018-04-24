@@ -96,7 +96,8 @@ class Menu extends \yii\db\ActiveRecord
 
         /* 面包屑导航 */
         $nav = static::getBreadcrumbs($rule);
-//var_dump($nav);
+        //var_dump($nav);
+        //var_dump($menus);
         /* 获取一级栏目 */
         foreach ($menus['main'] as $key => $item) {
             if (!is_array($item) || empty($item['title']) || empty($item['url']) ) {
@@ -123,13 +124,14 @@ class Menu extends \yii\db\ActiveRecord
                             continue;//继续循环
                         }
                     }
-                }var_dump($second_menu);
+                }
+                //var_dump($second_menu);
 
                 /* 生成child树 */
                 $groups = static::find()->select(['group','min(sort) as sort'])
                     ->where(['pid'=>$item['id'], 'hide'=>0])
                     ->groupBy(['group'])->orderBy('sort ASC')->asArray()->column();
-                //var_dump($groups);exit;
+                //var_dump($groups);
 
                 /* 按照group分组，生成子菜单树 */
                 foreach ($groups as $k => $g) {
@@ -140,6 +142,7 @@ class Menu extends \yii\db\ActiveRecord
                     list($g_name, $g_icon) = strpos($g, '|') ? explode('|',$g) :[$g, 'icon-cogs'];
                     $menus['child'][$k]['name'] = $g_name;
                     $menus['child'][$k]['icon'] = $g_icon;
+
                     /* 分组内容 */
                     $menus['child'][$k]['_child'] = ArrayHelper::list_to_tree($menuList, 'id', 'pid', 'operater', $item['id']);
                 }

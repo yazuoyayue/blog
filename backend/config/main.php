@@ -17,6 +17,9 @@ return [
     #设置全局布局文件
     'layout' => 'sample',
 
+    #设置默认controller
+    'defaultRoute' => 'article/index',
+
 
     /*
      * 后台控制器的命名空间的定义,比如：路由解析到controller = site，那么site的命名空间就是这里定义的，继而找到类名，文件

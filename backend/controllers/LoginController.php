@@ -18,6 +18,7 @@ class LoginController extends Controller
     public $layout = false;
     public $enableCsrfValidation = false;
     public function actionLogin() {
+
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome(); // 默认 site/index
         }
