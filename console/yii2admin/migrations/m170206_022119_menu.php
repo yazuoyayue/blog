@@ -5,7 +5,7 @@ use yii\db\Migration;
 class m170206_022119_menu extends Migration
 {
     public function up()
-    {
+    {return true;
         /* 取消外键约束 */
         $this->execute('SET foreign_key_checks = 0');
         

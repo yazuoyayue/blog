@@ -144,11 +144,13 @@ class Menu extends \yii\db\ActiveRecord
                     $menus['child'][$k]['icon'] = $g_icon;
 
                     /* 分组内容 */
-                    $menus['child'][$k]['_child'] = ArrayHelper::list_to_tree($menuList, 'id', 'pid', 'operater', $item['id']);
+                    $menus['child'][$k]['_child'] = $menuList;
                 }
             }
         }
-        //var_dump($menus['child'][0]);var_dump($menus['main']);exit;
+        Yii::info($menus);
+        //var_dump($menus['child'][0]);exit;
+       // var_dump($menus['main']);exit;
         return $menus;
     }
 

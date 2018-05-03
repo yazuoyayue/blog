@@ -15,8 +15,8 @@ use Yii;
 
 class LoginController extends Controller
 {
-    public $layout = false;
-    public $enableCsrfValidation = false;
+    public $layout = false;  #禁止使用layout布局
+    public $enableCsrfValidation = false; #在进行post提交时，会进行过滤跨站脚本攻击的验证
     public function actionLogin() {
 
         if (!\Yii::$app->user->isGuest) {

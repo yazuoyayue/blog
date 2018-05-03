@@ -44,6 +44,12 @@ return [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'xuepeng azuo 1314',
         ],
+        /*
+        数据库RBAC权限控制,不然在去yiii:$app->authManage的时候是null,导致null->getRoles(),语法报错
+        */
+        'authManager' => [
+            'class' => 'common\core\rbac\DbManager',
+        ],
     ],
 
     /**

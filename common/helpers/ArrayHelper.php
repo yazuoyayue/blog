@@ -28,6 +28,7 @@ class ArrayHelper extends \yii\helpers\ArrayHelper
      * ------------------------------------------
      */
     public static function list_to_tree($list, $pk='id', $pid = 'pid', $child = '_child', $root = 0) {
+
         // 创建Tree
         $tree = [];
         if(is_array($list)) {
@@ -49,6 +50,21 @@ class ArrayHelper extends \yii\helpers\ArrayHelper
                 }
             }
         }
+
+        return $tree;
+    }
+
+    public static function list_to_tree2($list, $pk='id', $pid = 'pid', $child = '_child', $root = 0) {
+
+        // 创建Tree
+        $tree = [];
+        if(is_array($list)) {
+            // 创建基于主键的数组引用
+            foreach ($list as $key => &$data) {
+                $tree[$data[$pid]]['_child'][$data[$pk]] = $data;
+            }
+        }
+
         return $tree;
     }
 
