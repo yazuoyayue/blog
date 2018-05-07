@@ -13660,3 +13660,1070 @@ $_SERVER = [
     ]
     'argc' => 2
 ]
+2018-05-04 17:48:38 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-05-04 17:48:38 [-][-][-][trace][yii\base\Controller::runAction] Route to run: test/pattern
+2018-05-04 17:48:38 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: console\controllers\TestController::actionPattern()
+2018-05-04 17:48:38 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_161'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/ProgramData/Oracle/Java/javapath:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Program Files/Java/jdk1.8.0_161/bin:/c/Program Files/Java/jdk1.8.0_161/jre/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\jre\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1525427318.901
+    'REQUEST_TIME' => 1525427318
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'test/pattern'
+    ]
+    'argc' => 2
+]
+2018-05-04 18:01:37 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-05-04 18:01:37 [-][-][-][trace][yii\base\Controller::runAction] Route to run: test/pattern2
+2018-05-04 18:01:37 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: console\controllers\TestController::actionPattern2()
+2018-05-04 18:01:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_161'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/ProgramData/Oracle/Java/javapath:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Program Files/Java/jdk1.8.0_161/bin:/c/Program Files/Java/jdk1.8.0_161/jre/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\jre\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1525428097.052
+    'REQUEST_TIME' => 1525428097
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'test/pattern2'
+    ]
+    'argc' => 2
+]
+2018-05-07 10:23:21 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-05-07 10:23:21 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: test/preg_replace_callback2 in D:\git\blog\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 D:\git\blog\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('preg_replace_ca...', Array)
+#1 D:\git\blog\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('preg_replace_ca...', Array)
+#2 D:\git\blog\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test/preg_repla...', Array)
+#3 D:\git\blog\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test/preg_repla...', Array)
+#4 D:\git\blog\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 D:\git\blog\console\yii.php(29): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "test/preg_replace_callback2". in D:\git\blog\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\git\blog\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test/preg_repla...', Array)
+#1 D:\git\blog\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\git\blog\console\yii.php(29): yii\base\Application->run()
+#3 {main}
+2018-05-07 10:23:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_161'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/ProgramData/Oracle/Java/javapath:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Program Files/Java/jdk1.8.0_161/bin:/c/Program Files/Java/jdk1.8.0_161/jre/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\jre\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1525659801.177
+    'REQUEST_TIME' => 1525659801
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'test/preg_replace_callback2'
+    ]
+    'argc' => 2
+]
+2018-05-07 10:23:33 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-05-07 10:23:33 [-][-][-][trace][yii\base\Controller::runAction] Route to run: test/preg-replace-callback2
+2018-05-07 10:23:33 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: console\controllers\TestController::actionPregReplaceCallback2()
+2018-05-07 10:23:33 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: preg_replace_callback(): Requires argument 2, 'parseTagsRecursive', to be a valid callback in D:\git\blog\console\controllers\TestController.php:70
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'preg_replace_ca...', 'D:\\git\\blog\\con...', 70, Array)
+#1 D:\git\blog\console\controllers\TestController.php(70): preg_replace_callback('#\\[indent]((?:[...', 'parseTagsRecurs...', 'plain [indent] ...')
+#2 D:\git\blog\console\controllers\TestController.php(73): console\controllers\parseTagsRecursive('plain [indent] ...')
+#3 [internal function]: console\controllers\TestController->actionPregReplaceCallback2()
+#4 D:\git\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\git\blog\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 D:\git\blog\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('preg-replace-ca...', Array)
+#7 D:\git\blog\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('preg-replace-ca...', Array)
+#8 D:\git\blog\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test/preg-repla...', Array)
+#9 D:\git\blog\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test/preg-repla...', Array)
+#10 D:\git\blog\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 D:\git\blog\console\yii.php(29): yii\base\Application->run()
+#12 {main}
+2018-05-07 10:23:33 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_161'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/ProgramData/Oracle/Java/javapath:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Program Files/Java/jdk1.8.0_161/bin:/c/Program Files/Java/jdk1.8.0_161/jre/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\jre\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1525659813.718
+    'REQUEST_TIME' => 1525659813
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'test/preg-replace-callback2'
+    ]
+    'argc' => 2
+]
+2018-05-07 10:27:24 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-05-07 10:27:24 [-][-][-][trace][yii\base\Controller::runAction] Route to run: test/preg-replace-callback2
+2018-05-07 10:27:24 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: console\controllers\TestController::actionPregReplaceCallback2()
+2018-05-07 10:27:24 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_161'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/ProgramData/Oracle/Java/javapath:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Program Files/Java/jdk1.8.0_161/bin:/c/Program Files/Java/jdk1.8.0_161/jre/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\jre\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1525660044.012
+    'REQUEST_TIME' => 1525660044
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'test/preg-replace-callback2'
+    ]
+    'argc' => 2
+]
+2018-05-07 10:27:36 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-05-07 10:27:36 [-][-][-][trace][yii\base\Controller::runAction] Route to run: test/preg-replace-callback2
+2018-05-07 10:27:36 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: console\controllers\TestController::actionPregReplaceCallback2()
+2018-05-07 10:27:36 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_161'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/ProgramData/Oracle/Java/javapath:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Program Files/Java/jdk1.8.0_161/bin:/c/Program Files/Java/jdk1.8.0_161/jre/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\jre\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1525660056.479
+    'REQUEST_TIME' => 1525660056
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'test/preg-replace-callback2'
+    ]
+    'argc' => 2
+]
+2018-05-07 10:28:25 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-05-07 10:28:25 [-][-][-][trace][yii\base\Controller::runAction] Route to run: test/preg-replace-callback2
+2018-05-07 10:28:25 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: console\controllers\TestController::actionPregReplaceCallback2()
+2018-05-07 10:28:25 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_161'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/ProgramData/Oracle/Java/javapath:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Program Files/Java/jdk1.8.0_161/bin:/c/Program Files/Java/jdk1.8.0_161/jre/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\jre\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1525660105.834
+    'REQUEST_TIME' => 1525660105
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'test/preg-replace-callback2'
+    ]
+    'argc' => 2
+]
+2018-05-07 10:30:31 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-05-07 10:30:31 [-][-][-][trace][yii\base\Controller::runAction] Route to run: test/preg-replace-callback2
+2018-05-07 10:30:31 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: console\controllers\TestController::actionPregReplaceCallback2()
+2018-05-07 10:30:31 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: preg_replace_callback(): Requires argument 2, 'TestController::parseTagsRecursiveStatic', to be a valid callback in D:\git\blog\console\controllers\TestController.php:91
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'preg_replace_ca...', 'D:\\git\\blog\\con...', 91, Array)
+#1 D:\git\blog\console\controllers\TestController.php(91): preg_replace_callback('#\\[indent]((?:[...', 'TestController:...', 'plain [indent] ...')
+#2 D:\git\blog\console\controllers\TestController.php(61): console\controllers\TestController::parseTagsRecursiveStatic('plain [indent] ...')
+#3 [internal function]: console\controllers\TestController->actionPregReplaceCallback2()
+#4 D:\git\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\git\blog\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 D:\git\blog\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('preg-replace-ca...', Array)
+#7 D:\git\blog\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('preg-replace-ca...', Array)
+#8 D:\git\blog\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test/preg-repla...', Array)
+#9 D:\git\blog\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test/preg-repla...', Array)
+#10 D:\git\blog\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 D:\git\blog\console\yii.php(29): yii\base\Application->run()
+#12 {main}
+2018-05-07 10:30:31 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_161'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/ProgramData/Oracle/Java/javapath:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Program Files/Java/jdk1.8.0_161/bin:/c/Program Files/Java/jdk1.8.0_161/jre/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\jre\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1525660231.402
+    'REQUEST_TIME' => 1525660231
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'test/preg-replace-callback2'
+    ]
+    'argc' => 2
+]
+2018-05-07 10:31:29 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-05-07 10:31:29 [-][-][-][trace][yii\base\Controller::runAction] Route to run: test/preg-replace-callback2
+2018-05-07 10:31:29 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: console\controllers\TestController::actionPregReplaceCallback2()
+2018-05-07 10:31:29 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_161'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/ProgramData/Oracle/Java/javapath:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Program Files/Java/jdk1.8.0_161/bin:/c/Program Files/Java/jdk1.8.0_161/jre/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\jre\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1525660289.884
+    'REQUEST_TIME' => 1525660289
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'test/preg-replace-callback2'
+    ]
+    'argc' => 2
+]
+2018-05-07 13:54:57 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-05-07 13:54:57 [-][-][-][trace][yii\base\Controller::runAction] Route to run: test/preg-replace-callback2
+2018-05-07 13:54:57 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: console\controllers\TestController::actionPregReplaceCallback2()
+2018-05-07 13:54:57 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_161'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/ProgramData/Oracle/Java/javapath:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Program Files/Java/jdk1.8.0_161/bin:/c/Program Files/Java/jdk1.8.0_161/jre/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\jre\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1525672497.392
+    'REQUEST_TIME' => 1525672497
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'test/preg-replace-callback2'
+    ]
+    'argc' => 2
+]
+2018-05-07 16:09:38 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-05-07 16:09:38 [-][-][-][trace][yii\base\Controller::runAction] Route to run: test/preg-replace-callback2
+2018-05-07 16:09:38 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: console\controllers\TestController::actionPregReplaceCallback2()
+2018-05-07 16:09:38 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KDLC-20171026RD'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/mingw64/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Administrator'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'HOSTNAME' => 'KDLC-20171026RD'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_161'
+    'LANG' => 'zh_CN.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KDLC-20171026RD'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/git/blog'
+    'ORIGINAL_PATH' => '/mingw64/bin:/usr/bin:/c/Users/Administrator/bin:/c/ProgramData/Oracle/Java/javapath:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/d/wamp64/bin/php/php7.0.10:/cmd:/c/Program Files/TortoiseGit/bin:/c/Program Files/Sublime Text 3:/c/ProgramData/ComposerSetup/bin:/c/Program Files/Java/jdk1.8.0_161/bin:/c/Program Files/Java/jdk1.8.0_161/jre/bin:/c/Users/Administrator/AppData/Roaming/Composer/vendor/bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Administrator\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Administrator\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\TortoiseSVN\\bin;D:\\wamp64\\bin\\php\\php7.0.10;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Sublime Text 3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\jre\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Microsoft XPS Document Writer'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/git/blog/console'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'KDLC-20171026RD'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WINDIR' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1525680578.956
+    'REQUEST_TIME' => 1525680578
+    'argv' => [
+        0 => 'yii.php'
+        1 => 'test/preg-replace-callback2'
+    ]
+    'argc' => 2
+]

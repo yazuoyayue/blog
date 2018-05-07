@@ -10,7 +10,7 @@
 return [
     'vendorPath' => DOCROOT . '/vendor', #@bower用到
     'timeZone' => 'Asia/Shanghai', #设置时区
-    'bootstrap' => ['log'],  # 开启日志
+    'bootstrap' => ['log'],  # 开启日志,这个一定要加
     'components' => [
         'log' => [
             'targets' => [

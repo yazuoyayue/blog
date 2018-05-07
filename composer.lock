@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc97bd7985902e79bac410697f73cab8",
+    "content-hash": "27d26c0a7f42209f306d1ba340ad74be",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -428,6 +428,39 @@
                 "html"
             ],
             "time": "2018-02-23T01:58:20+00:00"
+        },
+        {
+            "name": "kucha/ueditor",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BigKuCha/yii2-ueditor-widget.git",
+                "reference": "1daaba82c810195822b051d65796e2470d6ae540"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/BigKuCha/yii2-ueditor-widget/1daaba82c810195822b051d65796e2470d6ae540.zip",
+                "reference": "1daaba82c810195822b051d65796e2470d6ae540",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "kucha\\ueditor\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "BigKuCha",
+                    "email": "nevermore1989@vip.qq.com"
+                }
+            ],
+            "description": "desc",
+            "time": "2017-08-18T07:36:09+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

@@ -27,7 +27,7 @@ class CoreAsset extends AssetBundle
     ];
     /* 全局JS文件 */
     public $js = [
-        'global/plugins/jquery.min.js',
+        //'global/plugins/jquery.min.js',  #用下面的JqueryAsset依赖,不然会引起在调用ActiveForm::begin的时候yii.js找不到Jquery库
         'global/plugins/bootstrap/js/bootstrap.min.js',
         'global/plugins/js.cookie.min.js',
         'global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js',
@@ -41,7 +41,8 @@ class CoreAsset extends AssetBundle
     //public $jsOptions = ['condition' => 'lt IE9'];
     /* 依赖关系 */
     public $depends = [
-        //'yii\web\YiiAsset',
-        //'yii\grid\GridViewAsset'
+        'yii\web\JqueryAsset',
+        //'yii\grid\ActiveFormAsset',
+       // 'yii\grid\GridViewAsset'
     ];
 }

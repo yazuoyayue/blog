@@ -917,6 +917,41 @@
         ]
     },
     {
+        "name": "kucha/ueditor",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/BigKuCha/yii2-ueditor-widget.git",
+            "reference": "1daaba82c810195822b051d65796e2470d6ae540"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/BigKuCha/yii2-ueditor-widget/1daaba82c810195822b051d65796e2470d6ae540.zip",
+            "reference": "1daaba82c810195822b051d65796e2470d6ae540",
+            "shasum": ""
+        },
+        "time": "2017-08-18T07:36:09+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "kucha\\ueditor\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "BigKuCha",
+                "email": "nevermore1989@vip.qq.com"
+            }
+        ],
+        "description": "desc"
+    },
+    {
         "name": "myclabs/deep-copy",
         "version": "1.7.0",
         "version_normalized": "1.7.0.0",

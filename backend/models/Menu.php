@@ -72,7 +72,7 @@ class Menu extends \yii\db\ActiveRecord
         $rule    = strtolower($rule);
         /* 面包屑导航 */
         $path = [];
-        $nav = static::find()->select(['id','pid','title'])->where(['and' ,'pid != 0' ,['like', 'url', $rule]])->asArray()->one();
+        $nav = static::find()->select(['id','pid','title'])->where(['and' ,'1' ,['like', 'url', $rule]])->asArray()->one();
         while($nav){
             #$path[] = $nav;
             array_unshift($path, $nav);
@@ -108,6 +108,7 @@ class Menu extends \yii\db\ActiveRecord
                 unset($menus['main'][$key]);
                 continue;//继续循环
             }
+            #var_dump($nav);exit;
             /* 获取当前主菜单的子菜单项，其他子菜单不需要获取 */
             if ($nav[0]['id'] == $item['id']) {
                 /* 设置当前菜单的一级菜单高亮 */

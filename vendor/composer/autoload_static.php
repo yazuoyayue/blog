@@ -31,6 +31,10 @@ class ComposerStaticInit8058820a52714936b3d288c2368682bc
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'k' => 
+        array (
+            'kucha\\ueditor\\' => 14,
+        ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
@@ -120,6 +124,10 @@ class ComposerStaticInit8058820a52714936b3d288c2368682bc
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+        ),
+        'kucha\\ueditor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kucha/ueditor',
         ),
         'cebe\\markdown\\' => 
         array (
