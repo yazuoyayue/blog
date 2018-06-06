@@ -128,7 +128,7 @@ class Menu extends \yii\db\ActiveRecord
                 }
                 //var_dump($second_menu);
 
-                /* 生成child树 */
+                /* 生成group分组 */
                 $groups = static::find()->select(['group','min(sort) as sort'])
                     ->where(['pid'=>$item['id'], 'hide'=>0])
                     ->groupBy(['group'])->orderBy('sort ASC')->asArray()->column();

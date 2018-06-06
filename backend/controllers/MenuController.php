@@ -26,6 +26,7 @@ class MenuController extends BaseController
         $this->setForward();
 
         $searchModel = new MenuSearch();
+        //var_dump(Yii::$app->request->queryParams);exit;
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         return $this->render('index', [
             'searchModel' => $searchModel,

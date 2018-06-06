@@ -182,7 +182,7 @@ $this->beginPage();
                     <div class="page-bar">
                         <ul class="page-breadcrumb">
                             <li>
-                                <a href="<?=Url::to('site/index')?>">主页</a>
+                                <a href="<?=Url::to('site/index')?>">主页q</a>
                                 <i class="fa fa-circle"></i>
                             </li>
                             <?php foreach($breadcrumbs as $breadcrumb): ?>

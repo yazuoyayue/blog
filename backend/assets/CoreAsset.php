@@ -27,7 +27,13 @@ class CoreAsset extends AssetBundle
     ];
     /* 全局JS文件 */
     public $js = [
-        //'global/plugins/jquery.min.js',  #用下面的JqueryAsset依赖,不然会引起在调用ActiveForm::begin的时候yii.js找不到Jquery库
+        /*
+        * 用下面的JqueryAsset依赖,不然会引起在调用ActiveForm::begin的时候会再次加载jquery.js，
+          那么之前的bootstrap-hover-dropdown.min.js对jquery的扩展函数就会没有了，导致找不到函数,
+          ActiveForm::begin,会用到yii\web\YiiAsset,可以把yii\web\YiiAsset的 'yii\web\JqueryAsset'注释掉，这时候就可以不用下面的JqueryAsset依赖，改用我们自己的jquery.min.js
+        */
+        #'global/plugins/jquery.min.js',
+
         'global/plugins/bootstrap/js/bootstrap.min.js',
         'global/plugins/js.cookie.min.js',
         'global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js',

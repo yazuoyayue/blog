@@ -45,7 +45,7 @@ class Menu extends \common\core\BaseActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
+            'title' => '名称',
             'pid' => 'Pid',
             'sort' => 'Sort',
             'url' => 'Url',

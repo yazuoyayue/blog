@@ -30,10 +30,11 @@ $columns = [
         'attribute' => 'id',
         'options' => ['width' => '50px;']
     ],
-    [
-        'header' => '名称',
-        'attribute' => 'title'
-    ],
+//    [
+//        'header' => '名称',
+//        'attribute' => 'title'
+//    ],
+    'title',
     [
         'header' => '菜单路径',
         'options' => ['width' => '300px;'],
