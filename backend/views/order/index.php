@@ -70,27 +70,27 @@ $columns = [
         'filter' => Html::activeDropDownList($searchModel, 'pay_status', [0 => '未支付',1 => '已支付'], ['prompt'=>'全部','class'=>'form-control']),
 
     ],
-    [
-        'label' => '订单时间',
-        'attribute' => 'create_time',
-        'options' => ['width' => '150px;'],
-        'format' =>  ['date', 'php:Y-m-d H:i'],
-        'filter' => \kartik\widgets\DatePicker::widget([
-            'type' => \kartik\widgets\DatePicker::TYPE_RANGE,
-            'language' => 'zh-CN',
-            'layout' => '{input1}<br>{input2}',
-            'name' => 'OrderSearch[from_date]',
-            'value' => $searchModel->from_date,
-            'options' =>  ['class'=>'form-control','placeholder' => '开始时间'],
-            'name2' => 'OrderSearch[to_date]',
-            'value2' => $searchModel->to_date,
-            'options2' => ['class'=>'form-control','placeholder' => '结束时间'],
-            'pluginOptions' => [
-                'autoclose'=>true,
-                'format' => 'yyyy-mm-dd'
-            ]
-        ])
-    ],
+//    [
+//        'label' => '订单时间',
+//        'attribute' => 'create_time',
+//        'options' => ['width' => '150px;'],
+//        'format' =>  ['date', 'php:Y-m-d H:i'],
+//        'filter' => \kartik\widgets\DatePicker::widget([
+//            'type' => \kartik\widgets\DatePicker::TYPE_RANGE,
+//            'language' => 'zh-CN',
+//            'layout' => '{input1}<br>{input2}',
+//            'name' => 'OrderSearch[from_date]',
+//            'value' => $searchModel->from_date,
+//            'options' =>  ['class'=>'form-control','placeholder' => '开始时间'],
+//            'name2' => 'OrderSearch[to_date]',
+//            'value2' => $searchModel->to_date,
+//            'options2' => ['class'=>'form-control','placeholder' => '结束时间'],
+//            'pluginOptions' => [
+//                'autoclose'=>true,
+//                'format' => 'yyyy-mm-dd'
+//            ]
+//        ])
+//    ],
     [
         'label' => '支付类型',
         'attribute' => 'pay_type',
@@ -115,6 +115,16 @@ $columns = [
         'content' => function($model){
             return $model['status']?'正常':'隐藏';
         }
+    ],
+    [
+        'label' => '用户名',
+        'options' => ['width' => '50px;'],
+        'attribute' => 'users.username',
+    ],
+    [
+        'label' => 'aid',
+        'options' => ['width' => '50px;'],
+        'attribute' => 'aids.title',
     ],
     [
         'class' => 'yii\grid\ActionColumn',

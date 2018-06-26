@@ -48,7 +48,8 @@ class OrderSearch extends Order
     {
         //$params = $params ? : Yii::$app->request->getQueryParams();
         
-        $query = Order::find()->orderBy('order_id DESC')->asArray();
+        $query = Order::find()->joinWith(['users','aids'])
+            ->orderBy('order_id DESC');
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -99,6 +100,9 @@ class OrderSearch extends Order
         $query->orderBy([
             'order_id' => SORT_DESC,
         ]);
+//        $data = $query->one();
+//        var_dump($data['order_id']);exit;
+//        var_dump($data->users);exit;
 
         return $dataProvider;
     }

@@ -40,4 +40,12 @@ class Order extends \common\modelsgii\Order
             ],
         ];
     }
+
+    public function getUsers(){
+        return $this->hasOne(User::className(),['id' => 'uid']);
+    }
+
+    public function getAids(){
+        return $this->hasOne(Ad::className(),['id' => 'aid']);
+    }
 }

@@ -25,13 +25,17 @@ class ContactForm extends Model
     {
         return [
             // name, email, subject and body are required
-            [['name', 'email', 'subject', 'body'], 'required'],
+            [['name', 'body'], 'required'],
             // email has to be a valid email address
-            ['email', 'email'],
+            #如果没有下面的on连接场景，上面默认的是default场景,有了on,默认就是所有场景了
+            ['email', 'email', 'on' => 'scenario2'],
+            ['subject', 'string', 'on' =>'scenario1'],
             // verifyCode needs to be entered correctly
             //['verifyCode', 'captcha'],
         ];
     }
+
+
 
     /**
      * @inheritdoc

@@ -9,6 +9,8 @@
 namespace backend\controllers;
 
 
+use backend\models\Menu;
+use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use backend\models\ContactForm;
 use Yii;
@@ -71,9 +73,52 @@ class TestController extends Controller
 
             return $this->refresh();
         } else {
+            $data = [ 'ss',  'yii2'];
             return $this->render('contact', [
                 'model' => $model,
+                'data' => $data,
             ]);
+        }
+    }
+
+    public function actionSearchTitle ()
+    {
+        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        $out = ['results' => [['id' => '', 'text' => '']]];
+        $q = yii::$app->request->get('q', '');
+        if (!$q) {
+            return $out;
+        }
+
+        $data = Menu::find()
+            ->select('id, title as text')
+            ->andFilterWhere(['like', 'title', $q])
+            ->limit(50)
+            ->asArray()
+            ->all();
+        //$data = ArrayHelper::map($data, 'id', 'text');
+        $out['results'] = array_values($data);
+
+        return $out;
+    }
+
+    public function actionRule() {
+        $model = new ContactForm();
+        $model->setScenario('scenario2');
+        $data = [
+            'ContactForm' => [
+                'subject' => 22,
+                'email' => '22',
+                'name' => '22',
+                'body' => 'ww'
+            ]
+        ];
+        $model->load($data);
+        if($model->validate()) {
+            echo 1;
+        } else {
+            var_dump($model->getErrors());
+            echo 0;
         }
     }
 
