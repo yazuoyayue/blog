@@ -21,6 +21,7 @@ use Yii;
 
 class TestController extends Controller
 {
+    public $layout = "main";
 
     /**
      * @inheritdoc
