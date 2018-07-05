@@ -7,9 +7,9 @@
  *
  * @var $this \yii\web\View
  */
-use backend\assets\AppAsset;
+use backend\assets\MyLayoutAsset;
 
-AppAsset::register($this);
+MyLayoutAsset::register($this);
 #获取后台栏目
 #\yii\widgets\Menu::s
 $this->beginPage();

@@ -15,7 +15,7 @@ return [
     'basePath' => DOCROOT . '/backend',
 
     #设置全局布局文件
-    'layout' => 'sample',
+    'layout' => 'main',
 
     #设置默认controller
     'defaultRoute' => 'article/index',

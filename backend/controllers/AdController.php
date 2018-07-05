@@ -43,7 +43,7 @@ class AdController extends BaseController
         
         $searchModel = new AdSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        return $this->render('index', [
+        return $this->render('index2', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);

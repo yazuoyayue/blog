@@ -21,7 +21,7 @@ class CoreAsset extends AssetBundle
         'http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all',
         'global/plugins/font-awesome/css/font-awesome.min.css',
         'global/plugins/simple-line-icons/simple-line-icons.min.css',
-        'global/plugins/bootstrap/css/bootstrap.min.css',
+        //'global/plugins/bootstrap/css/bootstrap.min.css',
         'other/css/style.css',
         'global/plugins/bootstrap-switch/css/bootstrap-switch.min.css',
     ];
@@ -32,9 +32,9 @@ class CoreAsset extends AssetBundle
           那么之前的bootstrap-hover-dropdown.min.js对jquery的扩展函数就会没有了，导致找不到函数,
           ActiveForm::begin,会用到yii\web\YiiAsset,可以把yii\web\YiiAsset的 'yii\web\JqueryAsset'注释掉，这时候就可以不用下面的JqueryAsset依赖，改用我们自己的jquery.min.js
         */
-        #'global/plugins/jquery.min.js',
+        //'global/plugins/jquery.min.js',
 
-        'global/plugins/bootstrap/js/bootstrap.min.js',
+       // 'global/plugins/bootstrap/js/bootstrap.min.js',
         'global/plugins/js.cookie.min.js',
         'global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js',
         'global/plugins/jquery-slimscroll/jquery.slimscroll.min.js',
@@ -48,6 +48,7 @@ class CoreAsset extends AssetBundle
     /* 依赖关系 */
     public $depends = [
         'yii\web\JqueryAsset',
+        'yii\bootstrap\BootstrapThemeAsset'
         //'yii\grid\ActiveFormAsset',
        // 'yii\grid\GridViewAsset'
     ];

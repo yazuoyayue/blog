@@ -1,7 +1,9 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+//use yii\grid\GridView;
+use kartik\grid\GridView;
+use kartik\export\ExportMenu;
 
 /* @var $model common\modelsgii\Ad */
 /* @var $dataProvider yii\data\ActiveDataProvider  */
@@ -72,7 +74,48 @@ $columns = [
     ],
 ];
 
+$columns = [
+    'id',
+    'title',
+    'sort'
+]
+
 ?>
+
+<?php
+echo ExportMenu::widget([
+    'dataProvider' => $dataProvider,
+    'columns' => $columns,
+    'encoding' => 'gb2312',
+    'dropdownOptions' => [
+        'label' => '导出',
+        'class' => 'btn btn-default'
+    ],
+    'exportConfig' => [
+        ExportMenu::FORMAT_TEXT => false,
+        ExportMenu::FORMAT_PDF => false,
+        ExportMenu::FORMAT_EXCEL_X => FALSE,
+    ],
+    'columnSelectorOptions'=>[
+        'label' => '选择字段',
+    ],
+    'filename' => '试用申请列表_'.date('Y-m-d'),
+    'selectedColumns'=> [1, 2], // 导出不选中#和操作栏
+    'hiddenColumns'=>[0, 3], // 隐藏#和操作栏
+])?>
+
+<?php
+echo GridView::widget([
+    'dataProvider' => $dataProvider,
+    'filterModel' => $searchModel,
+    'filterSelector' => "input[name='".$dataProvider->getPagination()->pageParam."']",
+    'columns' => $columns,
+    'export' => false,
+]);
+
+
+?>
+
 
 <div class="portlet light portlet-fit portlet-datatable bordered">
     <div class="portlet-title">

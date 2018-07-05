@@ -61,6 +61,8 @@ $this->params['breadcrumbs'][] = $this->title;
 //                    'templateSelection' => new JsExpression('function (res) { return res.text; }'),
                 ],
             ]);?>
+
+
             <?php
 
             Modal::begin([
