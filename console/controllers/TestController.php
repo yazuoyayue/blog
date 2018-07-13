@@ -56,7 +56,7 @@ class TestController extends Controller
 
 
     public function actionPregReplaceCallback2() {
-        $input = "plain [indent] deep [indent] deeper [/indent] deep [/indent] plain";
+        $input = "plain [indent] deep [indent] deeper [/indent] deep2 [/indent] plain";
 
         /*
          *
@@ -74,11 +74,49 @@ class TestController extends Controller
 
     public function parseTagsRecursive($input)
     {
+	$pattern = "/<[^>]+>((.*)|(?R))*<\/[^>]+>/U";
+       // $pattern = "/<[^>]+>(.*)<\/[^>]+>/";
+    //$pattern = '#\[indent]((\s* .+\s*)|(?R))*\[/indent]#';
 
-        $regex = '#\[indent]((?:[^[]|\[(?!/?indent])|(?R))+)\[/indent]#';
+	$subject = "<div><b>example:</b><div align = left>this is a test</div></div>";
+    preg_match_all($pattern,$subject,$out);
+	print_r($out);
+exit;
+
+
+
+$string = "some text (aaa(b(c1)(c2)d)e)(test) more text";
+        preg_match_all("/\((([^()]*|(?R))*)\)/", $string, $matches);
+        echo '<pre>';
+        print_r($matches);
+        echo '</pre>';
+exit;
+        $regex = '#\[indent]((\s* .+\s*)|(?R))*\[/indent]#';
+        //$regex = '#\[indent]((?:[^[]|\[(?!/?indent])|(?R))+)\[/indent]#';
+        preg_match_all($regex, $input, $matches);
+        echo '<pre>';
+        print_r($matches);
+        echo '</pre>';
+        $line = preg_replace_callback($regex,  function ($matches) {
+            return '<divcustom style="margin-left: 10px">'.$matches[1].'</divcustom>';
+        }, $input);
+        var_dump($line);
+        exit;
+
+        $regex = '#\[indent]
+        (
+                (
+                    ?:[ ^[ ]
+                    |
+                    \[ (?! /?indent])|(?R)
+            )+
+        )
+        \[/indent]#';
+
+        //$regex = '#\[indent]( ( ?: [ ^[ ]  |   \[ ( ?:[^/?indent]])  |  (?R))+ ) \[/indent]#';
 
         if (is_array($input)) {
-            $input = '<div style="margin-left: 10px">'.$input[1].'</div>';
+            $input = '<divcustom style="margin-left: 10px">'.$input[1].'</divcustom>';
         }
 
         return preg_replace_callback($regex, array($this, 'parseTagsRecursive'), $input);
