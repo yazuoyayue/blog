@@ -33,7 +33,7 @@ class BaseController extends Controller
         }*/
 
         /* 解析数据库配置，解析后存放在Yii::$app->params['web']中 */
-        Yii::$app->params['web'] = Config::lists();
+        Yii::$app->params['web'] = [];
     }
 
     /**
