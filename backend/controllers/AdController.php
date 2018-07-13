@@ -37,11 +37,13 @@ class AdController extends BaseController
      */
     public function actionIndex()
     {
+
         /* 添加当前位置到cookie供后续跳转调用 */
         $this->setForward();
         //var_dump(Ad::getParents(2));
         
         $searchModel = new AdSearch();
+
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         return $this->render('index2', [
             'searchModel' => $searchModel,

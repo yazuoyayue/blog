@@ -1,4 +1,12 @@
 <?php
+
+//$arr = array("Hello" => "Hi", "world" => "earth");
+//$arr = strtr("aidenliu","ai","b");
+////echo strtr("Hello world",$arr);
+//echo $arr;
+//
+//exit;
+
 #定义根目录
 defined('DOCROOT') or define('DOCROOT', dirname(dirname(__dir__)));
 

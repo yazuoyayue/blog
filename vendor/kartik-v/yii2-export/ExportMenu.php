@@ -729,6 +729,7 @@ class ExportMenu extends GridView
                 "The 'writer' setting for '\PhpOffice\PhpSpreadsheet\Spreadsheet' must be setup in 'exportConfig'."
             );
         }
+
         $this->initPhpSpreadsheet();
         $this->initPhpSpreadsheetWriter($config['writer']);
         $this->initPhpSpreadsheetWorksheet();
