@@ -37492,3 +37492,185 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1531450134.263
     'REQUEST_TIME' => 1531450134
 ]
+2018-07-13 18:46:59 [112.64.125.202][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-07-13 18:46:59 [112.64.125.202][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2018-07-13 18:46:59 [112.64.125.202][-][-][info][yii\web\Session::open] Session started
+2018-07-13 18:46:59 [112.64.125.202][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2018-07-13 18:46:59 [112.64.125.202][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug',
+    'match' => false,
+    'parent' => null,
+]
+2018-07-13 18:46:59 [112.64.125.202][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-07-13 18:46:59 [112.64.125.202][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-07-13 18:46:59 [112.64.125.202][-][-][trace][yii\web\Application::handleRequest] Route requested: 'login/login'
+2018-07-13 18:46:59 [112.64.125.202][-][-][trace][yii\base\Controller::runAction] Route to run: login/login
+2018-07-13 18:46:59 [112.64.125.202][-][-][trace][yii\base\InlineAction::runWithParams] Running action: backend\controllers\LoginController::actionLogin()
+2018-07-13 18:46:59 [112.64.125.202][-][-][trace][yii\base\View::renderFile] Rendering view file: /data/www/www.52azuo.com/blog/backend/views/login/login.php
+2018-07-13 18:46:59 [112.64.125.202][-][-][info][application] $_GET = [
+    '_url' => '/login/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ee0c2fbe920392aaea983f5e172c834f'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi'
+    'HOSTNAME' => 'c833380bb7b0'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2'
+    'PHP_MD5' => ''
+    'PHP_VERSION' => '7.1.19'
+    'COMPOSER_HOME' => '/root/composer'
+    'GPG_KEYS' => 'A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2'
+    'PHP_ASC_URL' => 'https://secure.php.net/get/php-7.1.19.tar.xz.asc/from/this/mirror'
+    'PHP_URL' => 'https://secure.php.net/get/php-7.1.19.tar.xz/from/this/mirror'
+    'PATH' => '/root/composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/data'
+    'PHP_SHA256' => '7cab88f269b90a8a38dbcccf3ec0d5c6eba86122431a53eaa94405bbb60370a8'
+    'TZ' => 'Asia/Shanghai'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => 'PHPSESSID=ee0c2fbe920392aaea983f5e172c834f'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.52azuo.com'
+    'SCRIPT_FILENAME' => '/data/www/www.52azuo.com/blog/backend/web//index.php'
+    'PATH_TRANSLATED' => '/data/www/www.52azuo.com/blog/backend/web/'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.52azuo.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.19.0.5'
+    'REMOTE_PORT' => '60022'
+    'REMOTE_ADDR' => '112.64.125.202'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/www.52azuo.com/blog/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/login/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '_url=/login/login&'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1531478819.2908
+    'REQUEST_TIME' => 1531478819
+]
+2018-07-13 18:47:00 [112.64.125.202][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-07-13 18:47:00 [112.64.125.202][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2018-07-13 18:47:01 [112.64.125.202][-][-][info][yii\web\Session::open] Session started
+2018-07-13 18:47:01 [112.64.125.202][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2018-07-13 18:47:01 [112.64.125.202][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug',
+    'match' => false,
+    'parent' => null,
+]
+2018-07-13 18:47:01 [112.64.125.202][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-07-13 18:47:01 [112.64.125.202][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-07-13 18:47:01 [112.64.125.202][-][-][trace][yii\web\Application::handleRequest] Route requested: 'login/login'
+2018-07-13 18:47:01 [112.64.125.202][-][-][trace][yii\base\Controller::runAction] Route to run: login/login
+2018-07-13 18:47:01 [112.64.125.202][-][-][trace][yii\base\InlineAction::runWithParams] Running action: backend\controllers\LoginController::actionLogin()
+2018-07-13 18:47:01 [112.64.125.202][-][-][trace][yii\base\View::renderFile] Rendering view file: /data/www/www.52azuo.com/blog/backend/views/login/login.php
+2018-07-13 18:47:00 [112.64.125.202][-][-][info][application] $_GET = [
+    '_url' => '/login/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ee0c2fbe920392aaea983f5e172c834f'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi'
+    'HOSTNAME' => 'c833380bb7b0'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2'
+    'PHP_MD5' => ''
+    'PHP_VERSION' => '7.1.19'
+    'COMPOSER_HOME' => '/root/composer'
+    'GPG_KEYS' => 'A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2'
+    'PHP_ASC_URL' => 'https://secure.php.net/get/php-7.1.19.tar.xz.asc/from/this/mirror'
+    'PHP_URL' => 'https://secure.php.net/get/php-7.1.19.tar.xz/from/this/mirror'
+    'PATH' => '/root/composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/data'
+    'PHP_SHA256' => '7cab88f269b90a8a38dbcccf3ec0d5c6eba86122431a53eaa94405bbb60370a8'
+    'TZ' => 'Asia/Shanghai'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => 'PHPSESSID=ee0c2fbe920392aaea983f5e172c834f'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.52azuo.com'
+    'SCRIPT_FILENAME' => '/data/www/www.52azuo.com/blog/backend/web//index.php'
+    'PATH_TRANSLATED' => '/data/www/www.52azuo.com/blog/backend/web/'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.52azuo.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.19.0.5'
+    'REMOTE_PORT' => '60023'
+    'REMOTE_ADDR' => '112.64.125.202'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/www.52azuo.com/blog/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/login/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '_url=/login/login&'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1531478820.9364
+    'REQUEST_TIME' => 1531478820
+]
