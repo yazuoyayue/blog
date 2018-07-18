@@ -21,6 +21,7 @@ class TestController extends Controller
     public function actionIndex()
     {
         echo 'index';
+        chmod("@backend/runtime", 0777);
     }
 
     #测试正则
