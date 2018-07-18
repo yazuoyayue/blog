@@ -55,7 +55,7 @@ class TestController extends Controller
 
     public function actionIndex() {
         var_dump('test');
-        chmod("@backend/runtime", '777');
+        chmod("@backend/runtime", 0777);
         exit;
         return $this->render('index');
     }
