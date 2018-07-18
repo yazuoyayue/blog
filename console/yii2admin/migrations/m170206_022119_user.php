@@ -30,7 +30,7 @@ class m170206_022119_user extends Migration
             'allowance_updated_at' => 'int(10) NOT NULL COMMENT \'api接口调用速率限制\'',
             'status' => 'tinyint(4) NULL DEFAULT \'0\' COMMENT \'用户状态 1正常 0禁用\'',
             'PRIMARY KEY (`uid`)'
-        ], "ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='用户表'");
+        ], "ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='用户表'");
         
         /* 索引设置 */
         $this->createIndex('username','{{%user}}','username',1);

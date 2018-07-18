@@ -6,14 +6,17 @@
  * Time: 10:27
  */
 $mysql_db = '127.0.0.1';
-$mysql_db_master = 'yazuoyayue_blog';
+$mysql_db_master = 'gxptest';
+
+$mysql_db = 'mysql-db';
+$mysql_db_master = 'gxptest';
 
 return [
     'components' => [
         'db' => [
             'dsn' => "mysql:host=$mysql_db;dbname=$mysql_db_master",
             'username' => 'root',
-            'password' => '',
+            'password' => '123456',
             'charset' => 'utf8'
         ]
     ]

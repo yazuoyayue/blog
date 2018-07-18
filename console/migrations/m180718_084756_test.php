@@ -3,9 +3,9 @@
 use yii\db\Migration;
 
 /**
- * Class m180404_073822_newtableTest1
+ * Class m180718_084756_test
  */
-class m180404_073822_newtableTest1 extends Migration
+class m180718_084756_test extends Migration
 {
     /**
      * {@inheritdoc}
@@ -20,7 +20,7 @@ class m180404_073822_newtableTest1 extends Migration
      */
     public function safeDown()
     {
-        echo "m180404_073822_newtableTest1 cannot be reverted.\n";
+        echo "m180718_084756_test cannot be reverted.\n";
 
         return false;
     }
@@ -34,7 +34,7 @@ class m180404_073822_newtableTest1 extends Migration
 
     public function down()
     {
-        echo "m180404_073822_newtableTest1 cannot be reverted.\n";
+        echo "m180718_084756_test cannot be reverted.\n";
 
         return false;
     }
