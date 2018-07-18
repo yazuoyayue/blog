@@ -55,7 +55,8 @@ class TestController extends Controller
 
     public function actionIndex() {
         var_dump('test');
-        chmod("@backend/runtime", 0777);
+        //var_dump(Yii::getAlias("@backend/runtime"));exit;
+        chmod(Yii::getAlias("@backend/runtime"), 0777);
         exit;
         return $this->render('index');
     }
