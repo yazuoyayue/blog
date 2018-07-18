@@ -54,6 +54,7 @@ class TestController extends Controller
     }
 
     public function actionIndex() {
+        var_dump('test');exit;
         return $this->render('index');
     }
 
