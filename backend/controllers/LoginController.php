@@ -11,6 +11,7 @@ namespace backend\controllers;
 
 use backend\models\LoginForm;
 use yii\web\Controller;
+use yii\helpers\Url;
 use Yii;
 
 class LoginController extends Controller
@@ -35,5 +36,17 @@ class LoginController extends Controller
                 'model' => $model,
             ]);
         }
+    }
+
+    /**
+     * ---------------------------------------
+     * 注销页
+     * ---------------------------------------
+     */
+    public function actionLogout()
+    {
+        Yii::$app->user->logout();
+
+        return $this->redirect(Url::toRoute('/login/login'));
     }
 }

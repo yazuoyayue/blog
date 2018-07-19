@@ -36,7 +36,7 @@ return [
         #后台用户组件
         'user' => [
             'class' => yii\web\User::class,
-            'identityClass' => 'backend\models\Admin',
+            'identityClass' => 'backend\models\User',
             'enableAutoLogin' => '',
             'loginUrl' => ['login/login']
         ],

@@ -1,3 +1,5 @@
 .idea/
 assets/*
+backend/web/assets/*
+console/runtime/logs/*
 runtime/*
