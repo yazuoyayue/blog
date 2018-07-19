@@ -8,7 +8,7 @@
 $mysql_db = '127.0.0.1';
 $mysql_db_master = 'gxptest';
 
-$mysql_db = 'mysql-db';
+$mysql_db = '118.25.91.182'; #mysql-db
 $mysql_db_master = 'gxptest';
 
 return [

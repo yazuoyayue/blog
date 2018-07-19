@@ -41,7 +41,7 @@ class User extends \common\core\BaseActiveRecord
     {
         return [
             [['username', 'password', 'salt'], 'required'],
-            [['reg_time', 'reg_ip', 'last_login_time', 'last_login_ip', 'update_time', 'tuid', 'score', 'score_all', 'status'], 'integer'],
+            [['reg_time', 'reg_ip', 'last_login_time', 'last_login_ip', 'update_time', 'tuid', 'score', 'score_all', 'status', 'allowance_updated_at', 'allowance'], 'integer'],
             [['username'], 'string', 'max' => 16],
             [['password'], 'string', 'max' => 60],
             [['salt', 'email'], 'string', 'max' => 32],

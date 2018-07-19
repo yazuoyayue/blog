@@ -12,6 +12,8 @@ use backend\models\search\UserSearch;
  */
 class UserController extends BaseController
 {
+
+    public $layout = 'main';
     /**
      * ---------------------------------------
      * 构造方法

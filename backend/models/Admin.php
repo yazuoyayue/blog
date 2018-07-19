@@ -17,7 +17,7 @@ class Admin extends ActiveRecord implements IdentityInterface {
 
     #这里必须
     public static function tableName(){
-        return "{{%admin}}";
+        return "{{%user}}";
     }
     /**
      * Finds an identity by the given ID.

@@ -73,15 +73,13 @@ $this->params['title_sub'] = '添加前台用户';  // 在\yii\base\View中有$p
             'placeholder' => 'Mobile'
         ])->label('电话') ?>
         
-        <!-- 单图 -->
-        <?=$form->field($model, 'image')->widget('\common\widgets\images\Images',[
-            //'type' => \backend\widgets\images\Images::TYPE_IMAGE, // 单图
-            'saveDB'=>1, //图片是否保存到picture表，默认不保存
-        ],['class'=>'c-md-12'])->label('头像')->hint('单图图片尺寸为：300*300');?>
-        
         <?=$form->field($model, 'score')->textInput(['class'=>'form-control c-md-1'])->label('当前积分')->hint('可用于积分消费')?>
         
         <?=$form->field($model, 'score_all')->textInput(['class'=>'form-control c-md-1'])->label('总积分')->hint('消费积分时，总积分不会变')?>
+
+        <?=$form->field($model, 'allowance')->textInput(['class'=>'form-control c-md-1'])->label('api接口调用速率限制')->hint('api接口调用速率限制')?>
+
+        <?=$form->field($model, 'allowance_updated_at')->textInput(['class'=>'form-control c-md-1'])->label('api接口调用速率限制更新时间')->hint('api接口调用速率限制更新时间')?>
         
         <?= $form->field($model, 'status')->radioList(['1'=>'正常','0'=>'隐藏'])->label('用户状态') ?>
 
