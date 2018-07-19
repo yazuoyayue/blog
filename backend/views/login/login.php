@@ -13,7 +13,7 @@ $this->beginPage();
 
     <head>
         <meta charset="utf-8" />
-        <title>登录 | Yii2通用后台 by huanglongfei.cn</title>
+        <title>登录 | 后台 by www.52azuo.com</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
@@ -36,10 +36,10 @@ $this->beginPage();
         <div class="content">
             <!-- BEGIN LOGIN FORM -->
             <form class="login-form" action="<?=\yii\helpers\Url::toRoute('login/login')?>" method="post">
-                <h3 class="form-title font-green">登录</h3>
+                <h3 class="form-title font-green">请阿佐大人登录</h3>
                 <div class="alert alert-danger display-hide">
                     <button class="close" data-close="alert"></button>
-                    <span> 用户名或密码错误 2</span>
+                    <span> 用户名或密码错误</span>
                 </div>
                 <div class="form-group">
                     <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
@@ -61,7 +61,7 @@ $this->beginPage();
             </form>
             <!-- END LOGIN FORM -->
         </div>
-        <div class="copyright"> 2016 &copy; Metronic. huanglongfei.cn. </div>
+        <div class="copyright"> 2018 &copy; www.52azuo.com. </div>
 
     <?php $this->endBody() ?>
     </body>

@@ -32,7 +32,7 @@ $this->beginPage();
     <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8" />
-        <title><?= Html::encode($this->title) ?> | Yii2通用后台 by huanglongfei.cn</title>
+        <title><?= Html::encode($this->title) ?> | 后台 by www.52azuo.com</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
@@ -218,7 +218,7 @@ $this->beginPage();
         <!-- BEGIN FOOTER -->
         <div class="page-footer">
             <div class="page-footer-inner">
-                2016 &copy; Metronic by huanglongfei.cn.
+                2018 &copy; www.52azuo.com.
             </div>
             <div class="scroll-to-top">
                 <i class="icon-arrow-up"></i>
