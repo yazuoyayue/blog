@@ -35,7 +35,14 @@ return [
     'runtimePath' => DOCROOT . '/console/runtime',
 
     #组件
-    'components' => []
+    'components' => [
+        /*
+        数据库RBAC权限控制,不然在去yiii:$app->authManage的时候是null,导致null->getRoles(),语法报错
+        */
+        'authManager' => [
+            'class' => 'common\core\rbac\DbManager',
+        ],
+    ]
 ];
 
 

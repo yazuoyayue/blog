@@ -19,8 +19,8 @@ class AdminSearch extends Admin
     public function rules()
     {
         return [
-            [['uid', 'updated_at', 'status'], 'integer'],
-            [['username', 'password_hash', 'email'], 'safe'],
+            [['uid', 'reg_time', 'reg_ip', 'last_login_time', 'last_login_ip', 'update_time', 'status'], 'integer'],
+            [['username', 'password', 'salt', 'email', 'mobile'], 'safe'],
         ];
     }
 
@@ -58,15 +58,23 @@ class AdminSearch extends Admin
             // $query->where('0=1');
             return $dataProvider;
         }
-        
+
         $query->andFilterWhere([
             'uid' => $this->uid,
+            'reg_time' => $this->reg_time,
+            'reg_ip' => $this->reg_ip,
+            'last_login_time' => $this->last_login_time,
+            'last_login_ip' => $this->last_login_ip,
+            'update_time' => $this->update_time,
             'status' => $this->status,
         ]);
 
         $query->andFilterWhere(['like', 'username', $this->username])
-            ->andFilterWhere(['like', 'password_hash', $this->password_hash]);
-        
+            ->andFilterWhere(['like', 'password', $this->password])
+            ->andFilterWhere(['like', 'salt', $this->salt])
+            ->andFilterWhere(['like', 'email', $this->email])
+            ->andFilterWhere(['like', 'mobile', $this->mobile]);
+
         /* 排序 */
         $query->orderBy([
             'uid' => SORT_ASC,

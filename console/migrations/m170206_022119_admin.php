@@ -1,0 +1,49 @@
+<?php
+
+use yii\db\Migration;
+
+class m170206_022119_admin extends Migration
+{
+    public function up()
+    {
+        /* 取消外键约束 */
+        $this->execute('SET foreign_key_checks = 0');
+        
+        /* 创建表 */
+        $this->createTable('{{%admin}}', [
+            'uid' => 'int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT \'用户ID\'',
+            'username' => 'char(16) NOT NULL COMMENT \'用户名\'',
+            'password' => 'char(60) NOT NULL COMMENT \'密码\'',
+            'salt' => 'char(32) NOT NULL COMMENT \'密码干扰字符\'',
+            'email' => 'char(32) NOT NULL COMMENT \'用户邮箱\'',
+            'mobile' => 'char(15) NOT NULL DEFAULT \'\' COMMENT \'用户手机\'',
+            'reg_time' => 'int(10) unsigned NOT NULL DEFAULT \'0\' COMMENT \'注册时间\'',
+            'reg_ip' => 'bigint(20) NOT NULL DEFAULT \'0\' COMMENT \'注册IP\'',
+            'last_login_time' => 'int(10) unsigned NOT NULL DEFAULT \'0\' COMMENT \'最后登录时间\'',
+            'last_login_ip' => 'bigint(20) NOT NULL DEFAULT \'0\' COMMENT \'最后登录IP\'',
+            'update_time' => 'int(10) unsigned NOT NULL DEFAULT \'0\' COMMENT \'更新时间\'',
+            'status' => 'tinyint(4) NULL DEFAULT \'0\' COMMENT \'用户状态 1正常 0禁用\'',
+            'PRIMARY KEY (`uid`)'
+        ], "ENGINE=InnoDb  DEFAULT CHARSET=utf8 COMMENT='管理员表'");
+        
+        /* 索引设置 */
+        $this->createIndex('username','{{%admin}}','username',1);
+        $this->createIndex('email','{{%admin}}','email',1);
+        $this->createIndex('status','{{%admin}}','status',0);
+        
+        
+        /* 表数据 */
+
+        /* 设置外键约束 */
+        $this->execute('SET foreign_key_checks = 1;');
+    }
+
+    public function down()
+    {
+        $this->execute('SET foreign_key_checks = 0');
+        /* 删除表 */
+        $this->dropTable('{{%admin}}');
+        $this->execute('SET foreign_key_checks = 1;');
+    }
+}
+

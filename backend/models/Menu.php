@@ -41,6 +41,7 @@ class Menu extends \yii\db\ActiveRecord
         if(Yii::$app->params['admin'] == Yii::$app->user->id){
             return true;
         }
+
         /* rbac */
         if (!\Yii::$app->user->can($rule)) {
             return false;
