@@ -29,22 +29,22 @@ class PublicController extends \common\core\Controller
     {
         return ArrayHelper::merge(parent::actions(), [
             /* 省市区联动 */
-            'region' => [
-                'class' => DepDropAction::className(),
-                'outputCallback' => function ($id, $params) {
-                    $region = Region::find()->where(['parent_code' => $id])->orderBy('code ASC')->asArray()->all();
-                    $_out = [];//var_dump($region);
-                    foreach ($region as $value) {
-                        $_tmp['id'] = $value['code'];
-                        $_tmp['name'] = $value['fullname'];
-                        $_out[] = $_tmp;
-                    }
-                    return $_out;
-                },
-                'selectedCallback' => function ($id, $params) {
-                    return Yii::$app->getRequest()->get('sid');
-                }
-            ],
+//            'region' => [
+//                'class' => DepDropAction::className(),
+//                'outputCallback' => function ($id, $params) {
+//                    $region = Region::find()->where(['parent_code' => $id])->orderBy('code ASC')->asArray()->all();
+//                    $_out = [];//var_dump($region);
+//                    foreach ($region as $value) {
+//                        $_tmp['id'] = $value['code'];
+//                        $_tmp['name'] = $value['fullname'];
+//                        $_out[] = $_tmp;
+//                    }
+//                    return $_out;
+//                },
+//                'selectedCallback' => function ($id, $params) {
+//                    return Yii::$app->getRequest()->get('sid');
+//                }
+//            ],
             /* ueditor文件上传 */
             'ueditor' => [
                 'class' => 'common\actions\UEditorAction',

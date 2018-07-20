@@ -178,6 +178,9 @@ class ArrayHelper extends \yii\helpers\ArrayHelper
         }
         unset($_tmp);
         $tree = static::list_to_tree($list,$pk,$pid,'_child',$root);
+        if(empty($tree)) {
+            return [];
+        }
         return static::map( static::format_tree($tree, $value), $key, $value);
     }
 

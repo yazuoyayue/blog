@@ -8,3 +8,5 @@
 
 #命名空间 backend\assets\xx用到，controllerNamespace也用到，如：'controllerNamespace' => 'backend\controllers',
 Yii::setAlias('@backend', DOCROOT . '/backend');
+Yii::setAlias('@storage', DOCROOT . '/storage');
+Yii::setAlias('@storageUrl', 'http://storage.52azuo.com');

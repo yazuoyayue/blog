@@ -17,7 +17,7 @@ class m170206_022119_picture extends Migration
             'create_time' => 'int(10) unsigned NOT NULL DEFAULT \'0\' COMMENT \'创建时间\'',
             'status' => 'tinyint(2) NOT NULL DEFAULT \'0\' COMMENT \'状态\'',
             'PRIMARY KEY (`id`)'
-        ], "ENGINE=MyISAM  DEFAULT CHARSET=utf8");
+        ], "ENGINE=InnoDb  DEFAULT CHARSET=utf8");
         
         /* 索引设置 */
         $this->createIndex('md5','{{%picture}}','md5',0);
