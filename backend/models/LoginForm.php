@@ -17,6 +17,7 @@ class LoginForm extends Model
 {
     public $username;
     public $password_hash;
+    public $verifyCode;
     public $rememberMe = true;
 
     /**
@@ -35,6 +36,9 @@ class LoginForm extends Model
             [['username', 'password_hash'], 'required'],
             // password is validated by validatePassword()
             ['password_hash', 'validatePassword'],
+            [['verifyCode'], 'required'],
+            ['verifyCode', 'captcha','captchaAction'=>'login/captcha', 'message'=>'验证码错误'],
+            //['verifyCode', 'captcha','captchaAction'=>'admin/index/captcha','message'=>'验 证码不正确！'], 这种写法在官网自带的LoginForm.php中有写到，大家可以没事看看 ];
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
         ];
@@ -67,6 +71,7 @@ class LoginForm extends Model
         if ($this->validate()) {
             return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
         } else {
+            var_dump(json_encode($this->errors)) ;exit;
             return false;
         }
     }

@@ -44,15 +44,28 @@ $this->beginPage();
                 <div class="form-group">
                     <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
                     <label class="control-label visible-ie8 visible-ie9">用户名</label>
-                    <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="用户名" name="info[username]" /> 
+                    <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="用户名" name="LoginForm[username]" />
                 </div>
                 <div class="form-group">
                     <label class="control-label visible-ie8 visible-ie9">密码</label>
-                    <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="密码" name="info[password_hash]" />
+                    <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="密码" name="LoginForm[password_hash]" />
                 </div>
+                <?=
+                yii\captcha\Captcha::widget([
+                      'model' => $model,
+                     'captchaAction' => 'login/captcha',
+                      'attribute' => 'verifyCode',
+                  ]);
+//                Captcha::widget(yii\captcha\Captcha::className(),[
+//                    'options' => ['maxlength' => 4, 'style' => 'width: 190px; padding: 8px;', 'placeholder' => '请输入验证码'],
+//                    'template' => "{input} {image}",
+//                    'imageOptions' => ['alt' => '验证码','id' => 'login_code', 'src' => '', 'data-api' =>  Url::toRoute(['login/captcha'], true)],
+//                ]);
+                ?>
+
                 <div class="form-actions">
                     <label class="rememberme check mt-checkbox mt-checkbox-outline" style="padding-left:25px;">
-                        <input type="checkbox" name="info[rememberMe]" value="1" checked/>记住我
+                        <input type="checkbox" name="LoginForm[rememberMe]" value="1" checked/>记住我
                         <span></span>
                     </label>
                     <button type="submit" class="btn green pull-right" style="margin-top:-10px;">登录</button>

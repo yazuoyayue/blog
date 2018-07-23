@@ -61,6 +61,13 @@ class TestController extends Controller
         return $this->render('index');
     }
 
+    public function actionSms() {
+        var_dump('sms');exit;
+        $sms = new \common\services\SmsService();
+        $sms->send();
+        exit;
+    }
+
     /**
      * Displays contact page.
      *

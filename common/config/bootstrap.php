@@ -23,6 +23,7 @@ defined('YII_DEBUG') or define('YII_DEBUG', $env != 'prod');
 #加载vendor第三方依赖
 require_once (DOCROOT . '/vendor/autoload.php');
 
+
 #包含yii.php,yii的autoload模式
 require_once (DOCROOT . '/vendor/yiisoft/yii2/Yii.php');
 
