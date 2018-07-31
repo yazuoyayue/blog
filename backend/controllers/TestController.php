@@ -10,9 +10,13 @@ namespace backend\controllers;
 
 
 use backend\models\Menu;
+use common\services\captcha\CaptchaAccess;
+use common\services\TencentSmsService;
 use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use backend\models\ContactForm;
+use common\services\TestSmsService;
+use common\services\CaptchaService;
 use Yii;
 
 /*
@@ -62,9 +66,36 @@ class TestController extends Controller
     }
 
     public function actionSms() {
-        var_dump('sms');exit;
-        $sms = new \common\services\SmsService();
-        $sms->send();
+        var_dump('sms');
+//        $sms = new \common\services\SmsService();
+//        $sms->send();
+//        exit;
+        try{
+            $captcha = new CaptchaService([
+                'access' => [
+                    'class' => CaptchaAccess::class,
+                    'rules' => []
+                ]
+            ]);
+            $data['Sms'] = [
+                'phone' => 132,
+            ];
+            var_dump($captcha->load($data)->send());
+            exit;
+            $sms = new TencentSmsService([
+                'url' => 'https://yun.tim.qq.com/v5/tlssmssvr/sendsms',
+                'appid' => '1400116141',
+                'appkey' => 'a29fb00665f8497f6eadb3221a6a884b',
+                'phone' => 18552272190,
+                'templateId' => 160741,
+                'smsSign' => '阿佐的分享'
+            ]);
+            $sms->load($data)->send();
+            var_dump($sms);
+        } catch (\Exception $e) {
+            print  $e->getMessage();
+        }
+
         exit;
     }
 

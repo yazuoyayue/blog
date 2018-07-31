@@ -58,7 +58,7 @@ return [
     'as rbac' => [
         'class' => 'backend\behaviors\RbacBehavior',
         'allowActions' => [
-            'login/login','login/logout','login/captcha','public*','debug/*','gii/*',// 'user/*', 'test/*'// 不需要权限检测
+            'login/login','login/logout','login/captcha','public*','debug/*','gii/*', 'test/*'// 'user/*', 'test/*'// 不需要权限检测
         ]
     ],
 

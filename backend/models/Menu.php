@@ -67,6 +67,24 @@ class Menu extends \yii\db\ActiveRecord
         return $path;
     }
 
+    /**
+     * ---------------------------------------
+     * 递归获取其所有父栏目
+     * @param $id
+     * @return array
+     * ---------------------------------------
+     */
+    public static function getParents($id,$pids = []){
+        $path = [];
+        $nav = StoreCategory::find()->select(['id','parent_id','name'])->where(['id'=>$id])->asArray()->one();
+        $path[] = $nav;
+        $pids[] = $nav['id'];
+        if($nav['parent_id'] > 0 && !in_array($nav['parent_id'],$pids)){
+            $path = array_merge(static::getParents($nav['parent_id'], $pids),$path);
+        }
+        return $path;
+    }
+
 
     public static function getBreadcrumbs($rule = 'index/index'){
         /* 高亮 当前栏目 及其所有父栏目 */
