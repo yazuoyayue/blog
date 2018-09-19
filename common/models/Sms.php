@@ -1,6 +1,7 @@
 <?php
 namespace common\models;
 
+use common\services\CaptchaService;
 use yii\base\Model;
 
 /**
@@ -22,7 +23,7 @@ class Sms extends Model {
     public function rules()
     {
         return [
-            [['phone', 'templateId'] ,"\\common\\valid\\captcha\\ExistPhoneValidator"]
+            [['phone'] ,"\\common\\valid\\captcha\\ExistPhoneValidator", 'table_model' => '\\backend\\models\\User', 'message' => CaptchaService::EXIST_CODE]
         ];
     }
 

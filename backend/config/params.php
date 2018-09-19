@@ -29,7 +29,7 @@ return [
     ],
 
     /* 超级管理员的UID */
-    'admin' => 2,
+    'admin' => 1,
 
     /* 后台错误页面模板 */
     'action_error'     =>  '@backend/views/public/error.php', // 默认错误跳转对应的模板文件

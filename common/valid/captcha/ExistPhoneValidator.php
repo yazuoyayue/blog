@@ -7,8 +7,15 @@ use yii;
 class ExistPhoneValidator extends Validator{
     public $table_model = '';
     protected function validateValue($value) {
-        new $this->table_model();
-        $this->table_model::isExist();
-        var_dump($value);exit;
+        //var_dump($this->table_model);
+        //$tb_model = new $this->table_model();
+        $tb = $this->table_model;
+        $tb_model = $tb::findOne(['mobile' => 13260961809]);
+//        $this->table_model::isExist();
+        //var_dump($tb_model);
+        if(!empty($tb_model)) {
+            return [$this->message, []];
+        }
+
     }
 }
